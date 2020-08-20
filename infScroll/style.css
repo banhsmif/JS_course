@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Baloo Tamma 2", cursive;
+  background-color: #eeeeee;
+}
+h1 {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 40px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* Loading */
+.lds-ring {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #d9adad;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #d9adad transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Image container  */
+.image-container {
+  margin: 10px 30%;
+}
+.image-container img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Media Querry for smaller screen */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  .image-container {
+    margin : 10px;
+  }
+}
